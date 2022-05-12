@@ -2,14 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: limegreen;
+    background-color: black;
 }
 
-/* ~~~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~ body, header ~~~~~~~~~~~~~~~ */
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .header {
-    padding: 20px 0;
     text-align: center;
+    padding: 40px 0;
+}
+
+.title {
+    color: #5efd5e;
 }
 
 /* ~~~~~~~~~~~~~~~ slider ~~~~~~~~~~~~~~~ */
@@ -43,20 +54,23 @@
 .item-image {
     display: block;
     width: 700px;
-    height: 400px;
+    height: 450px;
     background-color: red;
 }
 
 .text {
     text-align: center;
-    padding: 20px;
-    font-size: 20px;
+    padding: 50px;
+    font-size: 25px;
+    color: white;
 }
 
 .indication {
     width: 20px;
     height: 3px;
-    background-color: black;
+    background-color: #5efd5e;
+    box-shadow: 0 0 2px 2px #5efd5e;
+    margin-bottom: 5px;
 }
 
 .indication-one {
@@ -93,19 +107,36 @@
 }
 
 .link-icon {
-    width: 15px;
-    height: 15px;
-    background-color: black;
+    width: 10px;
+    height: 10px;
+    background-color: #5efd5e;;
+    box-shadow: 0 0 2px 2px #5efd5e;;
     border-radius: 50%;
     transition: 0.5s;
 }
 
 .link:hover .link-icon {
-    background-color: blue;
-    transform: scale(1.3);
+    background-color: rgb(0, 255, 0);
+    box-shadow: 0 0 2px 2px rgb(0, 255, 0);
+    transform: scale(1.4);
 }
 
 footer {
-    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
     text-align: center;
+}
+
+.github-link {
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 92px;
+    color: #5efd5e;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.github-link:hover {
+    transform: scale(1.2);
 }
