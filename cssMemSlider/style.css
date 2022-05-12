@@ -2,4 +2,57 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: limegreen;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+/* ~~~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~~ */
+
+.header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* ~~~~~~~~~~~~~~~ slider ~~~~~~~~~~~~~~~ */
+
+.slider-wrapper {
+    margin: 20px auto;
+    width: 700px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.content-wrapper {
+    width: 3770px;
+    display: flex;
+    gap: 50px;
+}
+
+.item {
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.item:target {
+    visibility: visible;
+}
+
+.item-image {
+    display: block;
+    width: 700px;
+    height: 400px;
+    background-color: red;
+}
+
+.links {
+    margin: 0 auto;
+    width: 250px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
 }
