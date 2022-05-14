@@ -8,49 +8,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="title">CSS Mem Slider</h1>
-    </header>
-    <main class="main">
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="title">CSS Mem Slider</h1>
+        </header>
+        <input type="radio" name="checker" id="radio-one">
+        <input type="radio" name="checker" id="radio-two">
+        <input type="radio" name="checker" id="radio-three">
+        <input type="radio" name="checker" id="radio-four">
+        <input type="radio" name="checker" id="radio-five">
         <div class="slider-wrapper">
             <div class="content-wrapper">
-                <div class="item" id="item-one">
-                    <img class="item-image" id="image-one" src="assets/images/meme-1.jpg" alt="mem-image">
-                    <p class="text">О реалиях IT</p>
-                    <div class="indication indication-one"></div>
+                <div class="mem mem-one">
+                    <img class="image image-one" src="assets/images/meme-1.jpg" alt="mem-image">
+                    <p class="text text-one">О реальности IT</p>
                 </div>
-                <div class="item" id="item-two">
-                    <img class="item-image" id="image-two" src="assets/images/meme-2.jpg" alt="mem-image">
-                    <p class="text">Работа с продом</p>
-                    <div class="indication indication-two"></div>
+                <div class="mem mem-two">
+                    <img class="image image-two" src="assets/images/meme-2.jpg" alt="mem-image">
+                    <p class="text text-two">Работа с продом</p>
                 </div>
-                <div class="item" id="item-three">
-                    <img class="item-image" id="image-three" src="assets/images/meme-3.jpg" alt="mem-image">
-                    <p class="text">Главное — очки для вечеринки</p>
-                    <div class="indication indication-three"></div>
+                <div class="mem mem-three">
+                    <img class="image image-three" src="assets/images/meme-3.jpg" alt="mem-image">
+                    <p class="text text-three">Главное — очки для вечеринки</p>
                 </div>
-                <div class="item" id="item-four">
-                    <img class="item-image" id="image-four" src="assets/images/meme-4.jpg" alt="mem-image">
-                    <p class="text">Когда сидишь за таском пятнадцатый час</p>
-                    <div class="indication indication-four"></div>
+                <div class="mem mem-four">
+                    <img class="image image-four" src="assets/images/meme-4.jpg" alt="mem-image">
+                    <p class="text text-four">Когда сидишь за таском пятнадцатый час</p>
                 </div>
-                <div class="item" id="item-five">
-                    <img class="item-image" id="image-five" src="assets/images/meme-5.jpg" alt="mem-image">
-                    <p class="text">Новичок лезет без брони</p>
-                    <div class="indication indication-five"></div>
+                <div class="mem mem-five">
+                    <img class="image image-five" src="assets/images/meme-5.jpg" alt="mem-image">
+                    <p class="text text-five">Новичок лезет без брони</p>
                 </div>
             </div>
         </div>
-        <div class="links">
-            <a class="link link-one" href="#item-one"><div class="link-icon"></div></a>
-            <a class="link link-two" href="#item-two"><div class="link-icon"></div></a>
-            <a class="link link-three" href="#item-three"><div class="link-icon"></div></a>
-            <a class="link link-four" href="#item-four"><div class="link-icon"></div></a>
-            <a class="link link-five" href="#item-five"><div class="link-icon"></div></a>
+        <div class="labels-wrapper">
+            <label class="label label-one" for="radio-one"><div class="label-control control-one"></div></label>
+            <label class="label label-two" for="radio-two"><div class="label-control control-two"></div></label>
+            <label class="label label-three" for="radio-three"><div class="label-control control-three"></div></label>
+            <label class="label label-four" for="radio-four"><div class="label-control control-four"></div></label>
+            <label class="label label-five" for="radio-five"><div class="label-control control-five"></div></label>
         </div>
-    </main>
-    <footer class="footer">
-        <a class="github-link" href="https://github.com/ReWired25">ReWired25</a>
-    </footer>
+        <footer class="footer">
+            <a class="github-link" href="https://github.com/ReWired25">ReWired25</a>
+        </footer>
+    </div>
 </body>
 </html>
