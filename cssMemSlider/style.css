@@ -4,12 +4,32 @@
     box-sizing: border-box;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+    'first-row'
+    'second-row'
+    'third-row'
+    'fourth-row'
+    'fifth-row';
+}
+
+.radio {
+    grid-area: third-row;
+    opacity: 0;
+}
+
+.header {
+    grid-area: first-row;
+}
+
 .title {
     text-align: center;
-    padding: 20px 0 7px 0;
+    padding: 40px 0 40px 0;
 }
 
 .slider-wrapper {
+    grid-area: second-row;
     width: 705px;
     margin: 0 auto;
     overflow-x: hidden;
@@ -18,6 +38,7 @@
 .content-wrapper {
     display: flex;
     gap: 50px;
+    transition: 0.5s;
 }
 
 .image {
@@ -25,15 +46,21 @@
     height: 470px;
 }
 
+.mem {
+    opacity: 0;
+    transition: 0.5s;
+}
+
 .text {
     text-align: center;
-    padding: 40px 0;
+    padding: 40px 0 20px 0;
     font-size: 23px;
 }
 
 .labels-wrapper {
     display: flex;
     justify-content: center;
+    grid-area: fourth-row;
 }
 
 .label {
@@ -54,11 +81,84 @@
 }
 
 .label:hover .label-control {
-    transform: scale(1.3);
+    transform: scale(1.4);
+}
+
+#radio-one:checked ~ .labels-wrapper > .label-one > .control-one {
     background-color: limegreen;
 }
 
+#radio-one:checked ~ .slider-wrapper > .content-wrapper {
+    margin-left: 0;
+}
+
+#radio-one:checked ~ .slider-wrapper > .content-wrapper > .mem-one {
+    opacity: 1;
+}
+
+#radio-two:checked ~ .labels-wrapper > .label-two > .control-two {
+    background-color: limegreen;
+}
+
+#radio-two:checked ~ .slider-wrapper > .content-wrapper {
+    margin-left: -768px;
+}
+
+#radio-two:checked ~ .slider-wrapper > .content-wrapper > .mem-two {
+    opacity: 1;
+}
+
+#radio-three:checked ~ .labels-wrapper > .label-three > .control-three {
+    background-color: limegreen;
+}
+
+#radio-three:checked ~ .slider-wrapper > .content-wrapper {
+    margin-left: -1487px;
+}
+
+#radio-three:checked ~ .slider-wrapper > .content-wrapper > .mem-three {
+    opacity: 1;
+}
+
+#radio-four:checked ~ .labels-wrapper > .label-four > .control-four {
+    background-color: limegreen;
+}
+
+#radio-four:checked ~ .slider-wrapper > .content-wrapper {
+    margin-left: -2158px;
+}
+
+#radio-four:checked ~ .slider-wrapper > .content-wrapper > .mem-four {
+    opacity: 1;
+}
+
+#radio-five:checked ~ .labels-wrapper > .label-five > .control-five {
+    background-color: limegreen;
+}
+
+#radio-five:checked ~ .slider-wrapper > .content-wrapper {
+    margin-left: -2829px;
+}
+
+#radio-five:checked ~ .slider-wrapper > .content-wrapper > .mem-five {
+    opacity: 1;
+}
+
 .footer {
+    grid-area: fifth-row;
     text-align: center;
-    padding: 50px 0 20px 0;
+    padding: 50px 0 30px 0;
+}
+
+.github-link {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.github-link:hover {
+    transform: scale(1.2);
 }
