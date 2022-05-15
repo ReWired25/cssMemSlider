@@ -1,17 +1,33 @@
+@font-face {
+    font-family: 'grape-nuts';
+    src: url(assets/fonts/GrapeNuts-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'bellota';
+    src: url(assets/fonts/BellotaText-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f8fff8;
 }
 
-.wrapper {
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.main {
     display: grid;
     grid-template-areas: 
-    'first-row'
     'second-row'
     'third-row'
-    'fourth-row'
-    'fifth-row';
+    'fourth-row';
 }
 
 .radio {
@@ -19,13 +35,14 @@
     opacity: 0;
 }
 
-.header {
-    grid-area: first-row;
-}
-
 .title {
     text-align: center;
-    padding: 2.5rem 0;
+    font-family: "grape-nuts";
+    font-size: 2.5rem;
+    letter-spacing: 0.095rem;
+    color: darkmagenta;
+    text-shadow: 0 0 0.125rem darkmagenta;
+    padding: 2rem 0;
     transition: 1s;
 }
 
@@ -58,6 +75,9 @@
     text-align: center;
     padding: 2.5rem 0 1.25rem 0;
     font-size: 1.45rem;
+    font-family: 'bellota';
+    font-weight: bold;
+    color: darkmagenta;
 }
 
 .labels-wrapper {
@@ -79,6 +99,7 @@
     width: 0.95rem;
     height: 0.95rem;
     border: 0.2rem solid limegreen;
+    box-shadow: 0 0 0.095rem 0.095rem limegreen;
     border-radius: 50%;
     transition: 0.5s;
 }
@@ -148,7 +169,6 @@
 }
 
 .footer {
-    grid-area: fifth-row;
     text-align: center;
     padding: 3.15rem 0 2rem 0;
 }
@@ -156,16 +176,20 @@
 .github-link {
     display: block;
     margin: 0 auto;
-    width: 7rem;
+    width: 8rem;
     text-decoration: none;
-    font-size: 1.25rem;
+    font-family: "grape-nuts";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: darkmagenta;
+    text-shadow: 0 0 0.125rem darkmagenta;
+    letter-spacing: 0.095rem;
     transition: 0.5s;
 }
 
 .github-link:hover {
     transform: scale(1.2);
 }
-
 
 @media (max-width: 47rem) {
     .title {
@@ -214,7 +238,7 @@
 
     .slider-wrapper {
         width: 19.25rem;
-        height: 17rem;
+        height: 17.5rem;
     }
     
     .image {
