@@ -76,7 +76,7 @@ body {
 
 .slider-wrapper-text {
     grid-area: text-column;
-    margin: 1rem 2rem 0 auto;
+    margin: 1rem 4rem 0 auto;
     width: 18.75rem;
     overflow-x: hidden;
     transition: 1s;
@@ -90,7 +90,6 @@ body {
 }
 
 .text {
-    text-align: center;
     width: 18.75rem;
     font-size: 1.45rem;
     font-family: 'bellota';
@@ -101,7 +100,7 @@ body {
 }
 
 .labels-wrapper {
-    margin: 0.5rem 0 0 2rem;
+    margin: 0.5rem 0 0 4rem;
     display: flex;
     grid-area: control-column;
 }
@@ -345,6 +344,7 @@ body {
     }
 
     .text {
+        text-align: center;
         font-size: 1.07rem;
         padding: 1.25rem 0 0 0;
     }
