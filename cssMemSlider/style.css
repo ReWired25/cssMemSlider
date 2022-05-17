@@ -127,6 +127,13 @@ body {
     transform: scale(1.4);
 }
 
+.label:active .label-control {
+    transform: scale(1);
+    border: 0.2rem solid limegreen;
+    box-shadow: 0 0 0.095rem 0.095rem limegreen;
+    background-color: limegreen;
+}
+
 /* ~~~~~~~~~~~~~~~ item one ~~~~~~~~~~~~~~~ */
 
 #radio-one:checked ~ .labels-wrapper > .label-one > .control-one {
